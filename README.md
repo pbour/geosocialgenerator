@@ -1,1 +1,1 @@
-# geosocialgenerator
+# Geosocial Network Generator
