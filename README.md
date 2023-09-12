@@ -4,7 +4,7 @@ This repository provides the implementation for the paper "Towards Generating Re
 
 ## Dependencies
 
-This project depends on the following Python package and spaitial graph generator:
+This project depends on the following Python package and spatial graph generator:
 
 - [NetworkX](https://networkx.github.io/): A Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
  
