@@ -119,4 +119,4 @@ def main(argv):
 if __name__ == "__main__":
     main(sys.argv[1:])
 
-#python3 foursquare_like.py -g graph.gr -c spatial.co -m 3 -s 1.5 -n 10
+#python3 combiner_Gc.py -g graph.gr -c spatial.co -m 3 -s 1.5 -n 10
