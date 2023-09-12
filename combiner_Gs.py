@@ -82,4 +82,4 @@ def main(argv):
 if __name__ == "__main__":
     main(sys.argv[1:])
 
-#python3 spatial_graph.py -g graph.gr -c spatial.co -p 0.9
+#python3 combiner_Gs.py -g graph.gr -c spatial.co -p 0.9
