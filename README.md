@@ -11,7 +11,7 @@ This project depends on the following Python package and spatial graph generator
 - [SPIDER](https://github.com/aseldawy/spider): A Spatial Data Generator for creating synthetic spatial datasets.
 
 ## Usage
-### Percentage Combiner
+### Percentage Spatial Combiner
 To run the `combiner_Gs.py` script, use the following command-line syntax:
 
 ```bash
