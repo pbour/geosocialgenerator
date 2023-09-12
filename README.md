@@ -16,6 +16,7 @@ To run the `combiner_Gs.py` script, use the following command-line syntax:
 
 ```bash
 python3 combiner_Gs.py -g graph.gr -c spatial.co -p 0.9
+```
 
 Command Line Options
 -g: Specifies the input graph file.
@@ -27,7 +28,7 @@ To run the `combiner_Gp.py` script, use the following command-line syntax:
 
 ```bash
 python3 combiner_Gp.py -g graph.gr -c spatial.co -m 3 -s 1.5 -n 10
-
+```
 Command Line Options
 -g: Specifies the input graph file.
 -c: Specifies the input spatial data file.
@@ -40,6 +41,7 @@ To run the `combiner_Gc.py` script, use the following command-line syntax:
 
 ```bash
 python3 combiner_Gc.py -g graph.gr -c spatial.co -m 3 -s 1.5 -n 10
+```
 
 Command Line Options
 -g: Specifies the input graph file.
