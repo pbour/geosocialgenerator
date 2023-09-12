@@ -133,5 +133,3 @@ def main(argv):
 
 if __name__ == "__main__":
     main(sys.argv[1:])
-
-#python3 combiner_Gp.py -g graph.gr -c spatial.co -m 3 -s 1.5 -n 10
