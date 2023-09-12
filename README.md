@@ -10,6 +10,23 @@ This project depends on the following Python package and spatial graph generator
  
 - [SPIDER](https://github.com/aseldawy/spider): A Spatial Data Generator for creating synthetic spatial datasets.
 
+## Prerequisites
+Before proceeding, ensure that you have the following prerequisites in place:
+
+1. Python 3: Make sure you have Python 3 installed on your system. You can download it from python.org
+
+2. NetworkX: Install the NetworkX library using 'pip':
+```bash
+   pip install networkx
+```
+3. SPIDER: Obtain the SPIDER code from the official source. Follow the SPIDER documentation for installation and usage instructions.
+
+## Overview
+The process of generating GR and CO files involves two main steps:
+
+1. Generate a Graph file using NetworkX:
+Using NetworkX to create a graph structre that represents the connections between nodes.
+
 ## Usage
 ### Percentage Spatial Combiner
 To run the `combiner_Gs.py` script, use the following command-line syntax:
