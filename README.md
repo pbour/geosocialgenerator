@@ -28,7 +28,7 @@ The process of generating a Geosocial Network involves two main steps:
 
 ### GR and CO Files
 
-The user has the option to generate or upload his own GR and CO, as they correspond to the correct form. 
+The user has the option to generate or upload his own GR and CO files, as they correspond to the correct form. 
 
 1. Generate a Graph (GR file) using NetworkX:
 - Using NetworkX to create a graph structre that represents the connections between nodes and the social network.
