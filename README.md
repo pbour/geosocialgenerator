@@ -88,10 +88,12 @@ Command Line Options:
 
 To illustrate the integration, here is an example:
 
-1. Use NetworkX to create a graph representing a social network, where nodes are users, and edges represent friendships.
+1. Use the graph_generator.py file to create the desired scale free graph, which represents a social network where the nodes represent users and the edges represent friendships.
    
 2. Use SPIDER to generate spatial coordinates for each user.
 
 3. Combine the graph data (GR) with the spatial coordinates data (CO) to associate each user in the social network with their geographical location.
    
 4. Export the combined dataset to GR and CO files, to be ready for further analysis or visualization.
+
+In this repository you will find examples of GR and CO files that can be used to create a geosocial network.
