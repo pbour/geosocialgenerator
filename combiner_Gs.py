@@ -2,7 +2,7 @@ import random
 import sys
 import getopt
 
-def spatial_graph(gr_file, co_file, percentage):
+def combiner_Gs(gr_file, co_file, percentage):
     #read graph nodes from the GR file
     with open(gr_file, 'r', encoding="utf-8") as graph:
         lines = graph.readlines()[1:]
