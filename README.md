@@ -30,7 +30,7 @@ The process of generating a Geosocial Network involves two main steps:
 The user has the option to generate or upload his own GR and CO files, as they correspond to the correct form. 
 
 #### GR File
-1. you can use the following command lines to run the graph_generator.py program to generate a graph with NetworkX and save it to a GR file:
+Use the following command lines and run the graph_generator.py program to generate a graph with NetworkX and save it to a GR file:
 
 - **Barabasi-Albert Graph:** 
   ```bash
