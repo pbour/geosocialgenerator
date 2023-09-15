@@ -48,7 +48,7 @@ Use the following command lines and run the graph_generator.py program to genera
      python3 graph_generator.py -t scale_free_digraph -n <number_of_nodes> -a <alpha> -b <beta> -g <gamma> -d <delta_in> -o <delta_out>
      ```
 
-   - **Power Cluster Graph:**
+ - **Power Cluster Graph:**
 
      ```bash
      python3 graph_generator.py -t power -n <number_of_nodes> -m <number_of_edges> -p <probability>
