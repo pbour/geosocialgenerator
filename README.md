@@ -33,7 +33,7 @@ The process of generating a Geosocial Network involves two main steps:
 The user has the option to generate or upload his own GR and CO files, as they correspond to the correct form. 
 
 #### GR File
-Use the following command lines and run the 'graph_generator.py' program to generate a graph with NetworkX and save it to a GR file:
+Use the following command lines to run the `graph_generator.py` program and it will generate the specified graph type with NetworkX and save it to a GR file named `graph.gr` in current directory:
 
 - **Barabasi-Albert Graph:**
 ```bash
@@ -62,7 +62,7 @@ Generate Spatial Coordinates (CO file) using SPIDER:
 ### Spatial Combiners
 After you have created or uploaded the GR and CO files, you can now choose how you want to combine them and what type of geosocial graph you want to create.
 
-#### G<sub>s</sub> Combiner
+#### Percentage Spatial Combiner
 To run the `combiner_Gs.py` script, use the following command-line syntax:
 
 ```bash
@@ -74,7 +74,7 @@ Command Line Options:
 - *-c*: Specifies the input spatial data file.
 - *-p*: Sets the parameter for the percentage.
 
-#### G<sub>p</sub> Combiner
+#### Geo-Tweet Combiner
 To run the `combiner_Gp.py` script, use the following command-line syntax:
 
 ```bash
@@ -87,7 +87,7 @@ Command Line Options:
 - *-s*: Sets the parameter for the standard deviation.
 - *-n*: Sets the parameter for the number of nodes to combine.
 
-#### G<sub>c</sub> Combiner
+#### Foursquare Combiner
 To run the `combiner_Gc.py` script, use the following command-line syntax:
 
 ```bash
@@ -105,13 +105,16 @@ Command Line Options:
 ## Example
 
 To illustrate the integration, here is an example:
-
-1. Use the GraphGenerator class in the graph_generator.py file to generate various types of scale free graphs and save them to a gr file, representing a social network where the nodes represent users and the edges represent friendships.
+1. Generate a Barabasi-Albert graph with 100 nodes and 3 as number of edges to attach from a new node to existing nodes and save it in a gr. file, representing a social network where the nodes represent users and the edges represent friendships:
    
-3. Use SPIDER to generate spatial coordinates for each user and save them to a co file.
+```bash
+python generate_graphs.py -t barabasi -n 100 -m 3
+```
 
-4. Combine the graph data (GR) with the spatial coordinates data (CO) to associate each user in the social network with their geographical location.
+2. Use SPIDER to generate spatial coordinates for each user and save them to a co file.
+
+3. Combine the graph data (GR) with the spatial coordinates data (CO) to associate each user in the social network with their geographical location.
    
-5. Export the combined dataset to GR and CO files, to be ready for further analysis or visualization.
+4. Export the combined dataset to GR and CO files, to be ready for further analysis or visualization.
 
-In this repository you will find examples of GR and CO files that can be used to create a geosocial graph.
+In this repository you will find a directory that contains examples of GR and CO files that can be used to create a geosocial graph.
