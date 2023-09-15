@@ -36,7 +36,8 @@ The graph generators from NetworkX and spatial generators from Spider are indepe
 The user can also skip this phase either entirely or partally by using an existing .gr and/or .co file. 
 
 #### Social graph generation
-Currently, we considers three synthetic graph models from NetworkX. Execute `graph_generator.py` to generate the specified graph type with NetworkX; save the output to a .gr file.
+Currently, we consider three synthetic graph models from NetworkX. 
+Execute `graph_generator.py` to generate the specified graph type with NetworkX; save the output to a .gr file, e.g., graph.gr
 
 - **Barabasi-Albert Graph:**
 ```bash
@@ -58,9 +59,36 @@ python3 graph_generator.py -t power -n <number_of_nodes> -m <number_of_edges> -p
 ```
      
 #### Spatial objects generation
-Generate Spatial Coordinates (CO file) using SPIDER:
-- Using SPIDER to generate spatial coordinates for the graph nodes.
-- Depending on your requirements, SPIDER can create spatial data that represent real world geographical data.
+Execute `generator.py` from Spider to generate a collection of spatial objects. Usage from https://github.com/aseldawy/spider/blob/master/README.md:
+```shell
+python3 generator.py <distribution> <cardinality> <dimensions> [geometry] [parameters]
+```
+The parameters are generally specified as a set of `key=value` pairs. The possible keys and their usage is described below.
+
+- *distribution*: {uniform, diagonal, gaussian, parcel, bit, sierpinski}
+- *cardinality*: Number of geometries to generate
+- *dimensions*: Number of dimensions in generated geometries
+- *geometry*: {point, box}. If geometry type is `box` and the distribution is NOT `parcel`, you have to specify the maxsize property
+- *maxsize*: maximum size along each dimension (before transformation), e.g., 0.2,0.2 (no spaces)
+- *percentage*: (for diagonal distribution) the percentage of records that are perfectly on the diagonal
+- *buffer*: (for diagonal distribution) the buffer around the diagonal that additional points can be in
+- *srange*: (for parcel distribution) the split range [0.0, 1.0]
+- *dither*: (for parcel distribution) the amound of noise added to each record as a perctange of its initial size [0.0, 1.0]
+- *affinematrix*: (optional) values of the affine matrix separated by comma. Number of expected values is d*(d+1) where d is the number of dimensions
+- *compress*: (optional) { bz2 }
+- *format*: output format { csv, wkt, geojson }
+[affine matrix] (Optional) Affine matrix parameters to apply to all generated geometries
+
+By default Spider outputs the generated objects in csv format; run the following command to tranform it to the necessary .gr. Replace NUM_OF_OBJECTS with the number of lines in the .csv file.
+- **For points:**
+```shell
+awk -F',' '{lines++; print $1" "$2}' | sed NUM_OF_OBJECTS" "2
+```
+
+- **For rectangles:**
+```shell
+awk -F',' '{lines++; print $1" "$2" "$3" "$4}' | sed NUM_OF_OBJECTS" "4
+```
 
 ### Combining Phase
 After you have created or uploaded the GR and CO files, you can now choose how you want to combine them and what type of geosocial graph you want to create.
