@@ -31,12 +31,12 @@ Before proceeding, make sure that you have the following prerequisites in place:
 ## Workflow
 
 ### Generation phase
-The graph generators from NetworkX and spatial generators from Spider are independently employed to create a synthetic social network and a collection of geospatial objects, respectively. The outputs are stored inside a .gr and .co file, respectively. 
+The graph generators from NetworkX and spatial generators from Spider are independently employed to create a social graph and a collection of geospatial objects, respectively. The outputs are stored inside a .gr and .co file, respectively. 
 
-The user can also skip this phase entire or a part of it by using an existing .gr and/or .co file. 
+The user can also skip this phase either entirely or partally by using an existing .gr and/or .co file. 
 
 #### Social graph generation
-Use the following command lines to run the `graph_generator.py` program and it will generate the specified graph type with NetworkX and save it to a GR file named `graph.gr` in current directory:
+Currently, we considers three synthetic graph models from NetworkX. Execute `graph_generator.py` to generate the specified graph type with NetworkX; save the output to a .gr file.
 
 - **Barabasi-Albert Graph:**
 ```bash
