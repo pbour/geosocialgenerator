@@ -1,5 +1,8 @@
 # Geosocial Network Generator
 
+We study the generation of realistic geosocial networks. For this purpose, we consider three types of synthetic networks which mimic the characteristics of real networks. The repository provides the code for the generation process. 
+
+The geenration process comprises two phases. First, a graph and a spatial generator are independently employed to create a synthetic social network and a collection of geospatial objects, respectively. In the second phase, these intermediate datasets are then combined to construct a geosocial network. A combiner is defined for each type of synthetic geosocialnetwork, i.e., G<sub>s</sub>, G<sub>c</sub> and G<sub>p</sub>.
 This repository provides the implementation for the paper "Towards Generating Realistic Geosocial Networks", which presents three combiners that build different types of geosocial networks.
 
 ## Dependencies
@@ -59,7 +62,7 @@ Generate Spatial Coordinates (CO file) using SPIDER:
 ### Spatial Combiners
 After you have created or uploaded the GR and CO files, you can now choose how you want to combine them and what type of geosocial graph you want to create.
 
-#### G_s Combiner
+#### G<sub>s</sub> Combiner
 To run the `combiner_Gs.py` script, use the following command-line syntax:
 
 ```bash
@@ -71,7 +74,7 @@ Command Line Options:
 - *-c*: Specifies the input spatial data file.
 - *-p*: Sets the parameter for the percentage.
 
-#### G_p Combiner
+#### G<sub>p</sub> Combiner
 To run the `combiner_Gp.py` script, use the following command-line syntax:
 
 ```bash
@@ -84,7 +87,7 @@ Command Line Options:
 - *-s*: Sets the parameter for the standard deviation.
 - *-n*: Sets the parameter for the number of nodes to combine.
 
-#### G_c Combiner
+#### G<sub>c</sub> Combiner
 To run the `combiner_Gc.py` script, use the following command-line syntax:
 
 ```bash
