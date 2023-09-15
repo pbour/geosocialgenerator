@@ -90,10 +90,10 @@ awk -F',' '{lines++; print $1" "$2}' spatial.csv | sed '1s/^/NUM_OF_OBJECTS 2\n/
 awk -F',' '{lines++; print $1" "$2" "$3" "$4}' spatial.csv | sed '1s/^/NUM_OF_OBJECTS 4\n/' > spatial.co
 ```
 
-### Combining Phase
+### Combining phase
 After you have created or uploaded the GR and CO files, you can now choose how you want to combine them and what type of geosocial graph you want to create.
 
-#### Percentage Spatial Combiner
+#### Combiner G<sub>s</sub>
 To run the `combiner_Gs.py` script, use the following command-line syntax:
 
 ```bash
@@ -105,7 +105,7 @@ Command Line Options:
 - *-c*: Specifies the input spatial data file.
 - *-p*: Sets the parameter for the percentage.
 
-#### Geo-Tweet Combiner
+#### Combiner G<sub>c</sub>
 To run the `combiner_Gp.py` script, use the following command-line syntax:
 
 ```bash
@@ -118,7 +118,7 @@ Command Line Options:
 - *-s*: Sets the parameter for the standard deviation.
 - *-n*: Sets the parameter for the number of nodes to combine.
 
-#### Foursquare Combiner
+#### Combiner G<sub>p</sub> 
 To run the `combiner_Gc.py` script, use the following command-line syntax:
 
 ```bash
@@ -131,21 +131,3 @@ Command Line Options:
 - *-m*: Sets the parameter for the mean.
 - *-s*: Sets the parameter for the standard deviation.
 - *-n*: Sets the parameter for the number of nodes to combine.
-
-
-## Example
-
-To illustrate the integration, here is an example:
-1. Generate a Barabasi-Albert graph with 100 nodes and 3 as number of edges to attach from a new node to existing nodes and save it in a gr. file, representing a social network where the nodes represent users and the edges represent friendships:
-   
-```bash
-python3 graph_generator.py -t barabasi -n 100 -m 3
-```
-
-2. Use SPIDER to generate spatial coordinates for each user and save them to a co file.
-
-3. Combine the graph data (GR) with the spatial coordinates data (CO) to associate each user in the social network with their geographical location.
-   
-4. Export the combined dataset to GR and CO files, to be ready for further analysis or visualization.
-
-In this repository you will find a directory that contains examples of GR and CO files that can be used to create a geosocial graph.
