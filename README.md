@@ -2,11 +2,10 @@
 
 We study the generation of realistic geosocial networks. For this purpose, we consider three types of synthetic networks which mimic the characteristics of real networks. The repository provides the code for the generation process. 
 
-The figure bolow illustrates the generation process. Essentially, the process comprises two phases. First, a graph and a spatial generator are independently employed to create a synthetic social network and a collection of geospatial objects, respectively. In the second phase, these intermediate datasets are combined to construct a geosocial network. A combiner is defined for each type of synthetic geosocial network, denoted by G<sub>s</sub>, G<sub>c</sub> and G<sub>p</sub>.
+The figure below illustrates the generation process. Essentially, the process comprises two phases. First, a graph and a spatial generator are independently employed to create a synthetic social network and a collection of geospatial objects, respectively. In the second phase, these intermediate datasets are combined to construct a geosocial network. A combiner is defined for each type of synthetic geosocial network, denoted by G<sub>s</sub>, G<sub>c</sub> and G<sub>p</sub>.
 
 <figure>
   <img src="/figures/generation.png" alt="Generation process" />
-  <figcaption>Generation process</figcaption>
 </figure>
 
 
