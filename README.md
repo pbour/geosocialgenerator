@@ -30,7 +30,7 @@ Before proceeding, make sure that you have the following prerequisites in place:
 
 ## Workflow
 
-### Generation Phase
+### Generation phase
 The graph generators from NetworkX and spatial generators from Spider are independently employed to create a synthetic social network and a collection of geospatial objects, respectively. The outputs are stored inside a .gr and .co file, respectively. 
 
 The user can also skip this phase entire or a part of it by using an existing .gr and/or .co file. 
