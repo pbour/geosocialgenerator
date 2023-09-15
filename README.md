@@ -108,7 +108,7 @@ To illustrate the integration, here is an example:
 1. Generate a Barabasi-Albert graph with 100 nodes and 3 as number of edges to attach from a new node to existing nodes and save it in a gr. file, representing a social network where the nodes represent users and the edges represent friendships:
    
 ```bash
-python generate_graphs.py -t barabasi -n 100 -m 3
+python3 graph_generator.py -t barabasi -n 100 -m 3
 ```
 
 2. Use SPIDER to generate spatial coordinates for each user and save them to a co file.
