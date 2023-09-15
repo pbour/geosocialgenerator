@@ -79,7 +79,7 @@ The parameters are generally specified as a set of `key=value` pairs. The possib
 - *format*: output format { csv, wkt, geojson }
 [affine matrix] (Optional) Affine matrix parameters to apply to all generated geometries
 
-By default Spider outputs the generated objects in csv format; run the following command to tranform it to the necessary .gr. Replace NUM_OF_OBJECTS with the number of lines in the .csv file.
+By default Spider outputs the generated objects in csv format; run the following command to tranform it to the necessary .co format. Replace NUM_OF_OBJECTS with the number of lines in the .csv file.
 - **For points:**
 ```shell
 awk -F',' '{lines++; print $1" "$2}' spatial.csv | sed '1s/^/NUM_OF_OBJECTS 2\n/' > spatial.co
