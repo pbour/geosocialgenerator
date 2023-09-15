@@ -28,11 +28,12 @@ Before proceeding, make sure that you have the following prerequisites in place:
 ```
 3. SPIDER: Download the SPIDER code from the official source. Follow the SPIDER documentation for installation and usage instructions.
 
-## Generation Process
-The process of generating a Geosocial Network involves two main steps:
+## Workflow
 
 ### Generation Phase
-The user has the option to generate or upload his own GR and CO files, as they correspond to the correct form. 
+The graph generators from NetworkX and spatial generators from Spider are independently employed to create a synthetic social network and a collection of geospatial objects, respectively. The outputs are stored inside a .gr and .co file, respectively. 
+
+The user can also skip this phase entire or a part of it by using an existing .gr and/or .co file. 
 
 #### Social graph generation
 Use the following command lines to run the `graph_generator.py` program and it will generate the specified graph type with NetworkX and save it to a GR file named `graph.gr` in current directory:
