@@ -30,7 +30,7 @@ Before proceeding, make sure that you have the following prerequisites in place:
 
 ## Workflow
 
-### Generation phase
+### Generators phase
 The graph generators from NetworkX and spatial generators from Spider are independently employed to create a social graph and a collection of geospatial objects, respectively. The outputs are stored inside a .gr and .co file, respectively. 
 
 The user can also skip this phase either entirely or partally by using an existing .gr and/or .co file. 
@@ -90,7 +90,7 @@ awk -F',' '{lines++; print $1" "$2}' spatial.csv | sed '1s/^/NUM_OF_OBJECTS 2\n/
 awk -F',' '{lines++; print $1" "$2" "$3" "$4}' spatial.csv | sed '1s/^/NUM_OF_OBJECTS 4\n/' > spatial.co
 ```
 
-### Combining phase
+### Combiners phase
 After you have created or uploaded the GR and CO files, you can now choose how you want to combine them and what type of geosocial graph you want to create.
 
 #### Combiner G<sub>s</sub>
