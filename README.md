@@ -2,8 +2,13 @@
 
 We study the generation of realistic geosocial networks. For this purpose, we consider three types of synthetic networks which mimic the characteristics of real networks. The repository provides the code for the generation process. 
 
-The geenration process comprises two phases. First, a graph and a spatial generator are independently employed to create a synthetic social network and a collection of geospatial objects, respectively. In the second phase, these intermediate datasets are then combined to construct a geosocial network. A combiner is defined for each type of synthetic geosocialnetwork, i.e., G<sub>s</sub>, G<sub>c</sub> and G<sub>p</sub>.
-This repository provides the implementation for the paper "Towards Generating Realistic Geosocial Networks", which presents three combiners that build different types of geosocial networks.
+The figure bolow illustrates the generation process. Essentially, the process comprises two phases. First, a graph and a spatial generator are independently employed to create a synthetic social network and a collection of geospatial objects, respectively. In the second phase, these intermediate datasets are combined to construct a geosocial network. A combiner is defined for each type of synthetic geosocial network, denoted by G<sub>s</sub>, G<sub>c</sub> and G<sub>p</sub>.
+
+<figure>
+  <img src="/figures/" alt="Elephant at sunset" />
+  <figcaption>An elephant at sunset</figcaption>
+</figure>
+
 
 ## Dependencies
 
@@ -29,10 +34,10 @@ Before proceeding, ensure that you have the following prerequisites in place:
 ## Workflow
 The process of generating a Geosocial Network involves two main steps:
 
-### GR and CO Files
+### Generation Phase
 The user has the option to generate or upload his own GR and CO files, as they correspond to the correct form. 
 
-#### GR File
+#### Social graph generation
 Use the following command lines to run the `graph_generator.py` program and it will generate the specified graph type with NetworkX and save it to a GR file named `graph.gr` in current directory:
 
 - **Barabasi-Albert Graph:**
@@ -54,12 +59,12 @@ python3 graph_generator.py -t scale_free_digraph -n <number_of_nodes> -a <alpha>
 python3 graph_generator.py -t power -n <number_of_nodes> -m <number_of_edges> -p <probability>
 ```
      
-#### CO File
+#### Spatial objects generation
 Generate Spatial Coordinates (CO file) using SPIDER:
 - Using SPIDER to generate spatial coordinates for the graph nodes.
 - Depending on your requirements, SPIDER can create spatial data that represent real world geographical data.
 
-### Spatial Combiners
+### Combining Phase
 After you have created or uploaded the GR and CO files, you can now choose how you want to combine them and what type of geosocial graph you want to create.
 
 #### Percentage Spatial Combiner
