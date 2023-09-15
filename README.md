@@ -11,26 +11,24 @@ The figure below illustrates the generation process. Essentially, the process co
 
 ## Dependencies
 
-This project depends on the following Python package and spatial graph generator:
+This project depends on the following Python packages:
 
 - [NetworkX](https://networkx.github.io/): A Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
  
 - [SPIDER](https://github.com/aseldawy/spider): A Spatial Data Generator for creating synthetic spatial datasets.
 
 ## Prerequisites
-Before proceeding, ensure that you have the following prerequisites in place:
+Before proceeding, make sure that you have the following prerequisites in place:
 
 1. Python 3: Make sure you have Python 3 installed on your system. You can download it from python.org
    
-2. Clone or Download this repository to your local machine.
-
-3. NetworkX: Install the NetworkX library using 'pip':
+2. NetworkX: Install the NetworkX library using 'pip':
 ```bash
    pip install networkx
 ```
-4. SPIDER: Download the SPIDER code from the official source. Follow the SPIDER documentation for installation and usage instructions.
+3. SPIDER: Download the SPIDER code from the official source. Follow the SPIDER documentation for installation and usage instructions.
 
-## Workflow
+## Generation Process
 The process of generating a Geosocial Network involves two main steps:
 
 ### Generation Phase
