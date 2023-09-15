@@ -5,8 +5,8 @@ We study the generation of realistic geosocial networks. For this purpose, we co
 The figure bolow illustrates the generation process. Essentially, the process comprises two phases. First, a graph and a spatial generator are independently employed to create a synthetic social network and a collection of geospatial objects, respectively. In the second phase, these intermediate datasets are combined to construct a geosocial network. A combiner is defined for each type of synthetic geosocial network, denoted by G<sub>s</sub>, G<sub>c</sub> and G<sub>p</sub>.
 
 <figure>
-  <img src="/figures/" alt="Elephant at sunset" />
-  <figcaption>An elephant at sunset</figcaption>
+  <img src="/figures/generation.pdf" alt="Generation process" />
+  <figcaption>Generation process</figcaption>
 </figure>
 
 
