@@ -4,7 +4,7 @@ import numpy as np
 import sys
 import getopt
 
-def foursquare_like_graph(gr_file, co_file, mean, standard_dev, nodes_to_combine):
+def combiner_Gc(gr_file, co_file, mean, standard_dev, nodes_to_combine):
 
     #read graph nodes from the GR file
     with open(gr_file, 'r', encoding="utf-8") as gr:
