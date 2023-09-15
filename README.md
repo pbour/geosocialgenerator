@@ -33,24 +33,20 @@ The user has the option to generate or upload his own GR and CO files, as they c
 Use the following command lines and run the graph_generator.py program to generate a graph with NetworkX and save it to a GR file:
 
 - **Barabasi-Albert Graph:**
-  
   ```bash
      python3 graph_generator.py -t barabasi -n <number_of_nodes> -m <number_of_edges>
      ```
  - **Scale-Free Graph (Undirected):**
-
    ```bash
      python3 graph_generator.py -t scale_free -n <number_of_nodes> -a <alpha> -b <beta> -g <gamma> -d <delta_in> -o <delta_out>
      ```
 
  - **Scale-Free Graph (Directed):**
-
    ```bash
      python3 graph_generator.py -t scale_free_digraph -n <number_of_nodes> -a <alpha> -b <beta> -g <gamma> -d <delta_in> -o <delta_out>
      ```
 
  - **Power Cluster Graph:**
-
    ```bash
      python3 graph_generator.py -t power -n <number_of_nodes> -m <number_of_edges> -p <probability>
      ```
