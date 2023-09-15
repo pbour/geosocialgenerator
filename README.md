@@ -82,12 +82,12 @@ The parameters are generally specified as a set of `key=value` pairs. The possib
 By default Spider outputs the generated objects in csv format; run the following command to tranform it to the necessary .gr. Replace NUM_OF_OBJECTS with the number of lines in the .csv file.
 - **For points:**
 ```shell
-awk -F',' '{lines++; print $1" "$2}' | sed NUM_OF_OBJECTS" "2
+awk -F',' '{lines++; print $1" "$2}' spatial.csv | sed '1s/^/NUM_OF_OBJECTS 2\n/' > spatial.co
 ```
 
 - **For rectangles:**
 ```shell
-awk -F',' '{lines++; print $1" "$2" "$3" "$4}' | sed NUM_OF_OBJECTS" "4
+awk -F',' '{lines++; print $1" "$2" "$3" "$4}' spatial.csv | sed '1s/^/NUM_OF_OBJECTS 4\n/' > spatial.co
 ```
 
 ### Combining Phase
