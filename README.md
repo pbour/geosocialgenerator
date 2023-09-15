@@ -32,7 +32,8 @@ The user has the option to generate or upload his own GR and CO files, as they c
 #### GR File
 Use the following command lines and run the graph_generator.py program to generate a graph with NetworkX and save it to a GR file:
 
-- **Barabasi-Albert Graph:** 
+- **Barabasi-Albert Graph:**
+  
   ```bash
      python3 graph_generator.py -t barabasi -n <number_of_nodes> -m <number_of_edges>
      ```
