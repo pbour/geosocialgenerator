@@ -131,3 +131,6 @@ Command Line Options:
 - *-m*: Sets the parameter for the mean.
 - *-s*: Sets the parameter for the standard deviation.
 - *-n*: Sets the parameter for the number of nodes to combine.
+
+## Samples
+Inside folder `samples` you can find an example of a .gr and of a .co file
