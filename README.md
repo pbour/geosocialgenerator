@@ -59,7 +59,7 @@ Generate Spatial Coordinates (CO file) using SPIDER:
 ### Spatial Combiners
 After you have created or uploaded the GR and CO files, you can now choose how you want to combine them and what type of geosocial graph you want to create.
 
-#### Percentage Spatial Combiner
+#### G_s Combiner
 To run the `combiner_Gs.py` script, use the following command-line syntax:
 
 ```bash
@@ -71,7 +71,7 @@ Command Line Options:
 - *-c*: Specifies the input spatial data file.
 - *-p*: Sets the parameter for the percentage.
 
-#### Geo-Tweet Combiner
+#### G_p Combiner
 To run the `combiner_Gp.py` script, use the following command-line syntax:
 
 ```bash
@@ -84,7 +84,7 @@ Command Line Options:
 - *-s*: Sets the parameter for the standard deviation.
 - *-n*: Sets the parameter for the number of nodes to combine.
 
-#### Foursquare Combiner
+#### G_c Combiner
 To run the `combiner_Gc.py` script, use the following command-line syntax:
 
 ```bash
